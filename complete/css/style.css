@@ -1,0 +1,323 @@
+body {
+  /*  ブラウザ幅が1024px以下の時は横幅に合わせて小さくする  */
+  min-width: 1024px;
+  color: #082B48;
+  font-family: Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: #082B48;
+  text-decoration: none;
+}
+
+/* マウスホバー時の動き */
+
+a:hover {
+  opacity: .7;
+}
+
+.clear {
+  /* floatを直す方法① */
+  clear: both;
+}
+
+*.clear::after {
+  content: '';
+  clear: both;
+}
+
+/*================================================================
+headerのcss
+================================================================*/
+
+header {
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-nav {
+  overflow: hidden;
+}
+
+.header-nav-item {
+  margin-left: 50px;
+  float: left;
+}
+
+.header-nav-item a {
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+/*================================================================
+.topのcss
+================================================================*/
+
+.top {
+  width: 100%;
+  padding: 80px 0;
+  background-image: url('../img/main-vsual-nontitle.png');
+  background-size: cover;
+  text-align: center;
+}
+
+.top-catchcopy {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.top-subtitle {
+  font-size: 18px;
+}
+
+/*================================================================
+.contentsのcss
+================================================================*/
+
+.section {
+  padding: 80px 0;
+}
+
+.section p {
+  font-size: 16px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/*================================================================
+.aboutのcss
+================================================================*/
+
+.about {
+  overflow: hidden;
+}
+
+.about img {
+  width: 48%;
+  float: left;
+}
+
+.about p {
+  width: 48%;
+  float: right;
+}
+
+/*================================================================
+.courseのcss
+================================================================*/
+
+.course {
+  background-color: #e3fcf4;
+}
+
+.course-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.course-item {
+  width: 30%;
+}
+
+/*================================================================
+.contactのcss
+================================================================*/
+
+.contact p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  text-align: center;
+}
+
+input[type="text"], input[type="email"] {
+  display: inline-block;
+  width: 600px;
+  font-size: 18px;
+  border-radius: 999px;
+  padding: 15px;
+  margin-bottom: 25px;
+  border: 3px solid #D8D8D8;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: bold;
+  background-color: #082B48;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  font-size: 24px;
+  padding: 20px 60px;
+}
+
+.btn-register {
+  display: block;
+  margin: auto;
+  background-color: #ec6d64;
+}
+
+/*================================================================
+footerのcss
+================================================================*/
+
+footer {
+  background-color: #082B48;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.copyright {
+  text-align: right;
+  font-size: 12px;
+}
+
+/*================================================================
+スマホ用のcss(横幅767px以下の時のcss)
+================================================================*/
+
+@media only screen and (max-width: 767px) {
+  /*  スマホの横幅用のクラス  */
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*  ブラウザ幅が375px以下の時は横幅に合わせて小さくする  */
+  body {
+    min-width: 375px;
+  }
+  /*================================================================
+    headerのcss
+  ================================================================*/
+  header {
+    padding: 20px 0 15px;
+  }
+
+  .header-left {
+    float: none;
+  }
+
+  .header-title {
+    text-align: center;
+  }
+
+  .header-right {
+    float: none;
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .header-nav-item {
+    float: none;
+    margin: 0;
+  }
+  /*================================================================
+    .topのcss
+  ================================================================*/
+  .top {
+    padding: 120px 0;
+  }
+
+  .top-catchcopy {
+    font-size: 32px;
+  }
+
+  .top-subtitle {
+    font-size: 14px;
+  }
+  /*================================================================
+    .contentsのcss
+  ================================================================*/
+  .section {
+    padding: 60px 0;
+  }
+
+  .section p {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  /*================================================================
+    .aboutのcss
+  ================================================================*/
+  .about img {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .about p {
+    width: 100%;
+    float: none;
+  }
+  /*================================================================
+  .courseのcss
+  ================================================================*/
+  .course-item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .course-item:last-child {
+    margin-bottom: 0;
+  }
+  /*================================================================
+    .contactのcss
+  ================================================================*/
+  input[type="text"], input[type="email"] {
+    width: 100%;
+  }
+  /*================================================================
+    footerのcss
+  ================================================================*/
+  .copyright {
+    font-size: 10px;
+    text-align: center;
+  }
+}
