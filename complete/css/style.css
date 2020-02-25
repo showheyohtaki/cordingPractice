@@ -2,14 +2,15 @@ body {
   /*  ブラウザ幅が1024px以下の時は横幅に合わせて小さくする  */
   min-width: 1024px;
   color: #082B48;
-  font-family: Verdana, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
 }
 
 .container {
   width: 980px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 img {
@@ -25,17 +26,7 @@ a {
 /* マウスホバー時の動き */
 
 a:hover {
-  opacity: .7;
-}
-
-.clear {
-  /* floatを直す方法① */
-  clear: both;
-}
-
-*.clear::after {
-  content: '';
-  clear: both;
+  opacity: 0.7;
 }
 
 /*================================================================
@@ -44,7 +35,6 @@ headerのcss
 
 header {
   padding: 20px 0;
-  overflow: hidden;
 }
 
 .header-left {
@@ -120,10 +110,6 @@ header {
 .aboutのcss
 ================================================================*/
 
-.about {
-  overflow: hidden;
-}
-
 .about img {
   width: 48%;
   float: left;
@@ -189,6 +175,10 @@ input[type="text"], input[type="email"] {
   padding: 20px 60px;
 }
 
+.btn:hover {
+  opacity: 0.7;
+}
+
 .btn-register {
   display: block;
   margin: auto;
@@ -221,7 +211,6 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
-  
   /*  ブラウザ幅が375px以下の時は横幅に合わせて小さくする  */
   body {
     min-width: 375px;
@@ -232,24 +221,19 @@ footer {
   header {
     padding: 20px 0 15px;
   }
-
   .header-left {
     float: none;
   }
-
   .header-title {
     text-align: center;
   }
-
   .header-right {
     float: none;
   }
-
   .header-nav {
     display: flex;
     justify-content: space-around;
   }
-
   .header-nav-item {
     float: none;
     margin: 0;
@@ -260,11 +244,9 @@ footer {
   .top {
     padding: 120px 0;
   }
-
   .top-catchcopy {
     font-size: 32px;
   }
-
   .top-subtitle {
     font-size: 14px;
   }
@@ -274,11 +256,9 @@ footer {
   .section {
     padding: 60px 0;
   }
-
   .section p {
     font-size: 14px;
   }
-
   .section-title {
     font-size: 20px;
     margin-bottom: 30px;
@@ -291,7 +271,6 @@ footer {
     float: none;
     margin-bottom: 20px;
   }
-
   .about p {
     width: 100%;
     float: none;
@@ -303,7 +282,6 @@ footer {
     width: 100%;
     margin-bottom: 30px;
   }
-
   .course-item:last-child {
     margin-bottom: 0;
   }
