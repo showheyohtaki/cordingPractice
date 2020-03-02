@@ -126,6 +126,7 @@ courseのcss
 
 .course-wrap {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
