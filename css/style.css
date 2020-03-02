@@ -65,3 +65,110 @@ header {
   line-height: 36px;
   font-weight: 600;
 }
+
+/*================================================================
+section共通のcss
+================================================================*/
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/*================================================================
+aboutのcss
+================================================================*/
+
+.about img {
+  width: 48%;
+  float: left;
+}
+
+.about p {
+  width: 48%;
+  float: right;
+}
+
+/*================================================================
+courseのcss
+================================================================*/
+
+.course {
+  background-color: #e3fcf4;
+}
+
+.course-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.course-item {
+  width: 30%;
+}
+
+/*================================================================
+お問い合わせのcss
+================================================================*/
+
+.contact p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  text-align: center;
+}
+
+input[type="email"], input[type="text"] {
+  display: inline-block;
+  margin: auto;
+  width: 600px;
+  font-size: 18px;
+  border: 3px solid #D8D8D8;
+  padding: 15px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #082B48;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 20px 60px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn-register {
+  display: block;
+  margin: auto;
+  background-color: #ec6d64;
+}
+
+/*================================================================
+footerのcss
+================================================================*/
+
+footer {
+  background-color: #082B48;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.copyright {
+  font-size: 12px;
+  float: right;
+}
