@@ -1,13 +1,12 @@
 body {
-  /*  ブラウザ幅が1024px以下の時は横幅に合わせて小さくする  */
-  min-width: 1024px;
   color: #082B48;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
 }
 
 .container {
-  width: 980px;
+  width: 90%;
+  max-width: 980px;
   margin: auto;
   overflow: hidden;
   word-wrap: break-word;
@@ -205,16 +204,6 @@ footer {
 ================================================================*/
 
 @media only screen and (max-width: 767px) {
-  /*  スマホの横幅用のクラス  */
-  .container {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /*  ブラウザ幅が375px以下の時は横幅に合わせて小さくする  */
-  body {
-    min-width: 375px;
-  }
   /*================================================================
     headerのcss
   ================================================================*/
